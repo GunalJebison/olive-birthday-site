@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Happy Birthday Shanthi</title>
-    <meta name="description" content="Happy birthday Shanthi - sincere wishes with olive tones and a warm personal photo card." />
+    <meta
+      name="description"
+      content="A beautifully animated birthday greeting for Shanthi with olive tones, elegant typography, and warm wishes."
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -12,42 +15,52 @@
   </head>
   <body>
     <div class="page-shell">
-      <div class="ambient ambient-one"></div>
-      <div class="ambient ambient-two"></div>
-      <div class="sparkles" aria-hidden="true"></div>
+      <div class="sparkle-layer" aria-hidden="true"></div>
 
       <main class="birthday-card">
-        <section class="image-panel">
-          <div class="photo-badge">Birthday Girl</div>
-          <div class="main-photo" aria-label="Birthday portrait of Shanthi"></div>
-        </section>
+        <div class="card-header">Birthday Girl</div>
 
-        <section class="content-panel">
-          <p class="eyebrow">Birthday celebration</p>
-          <h1>Happy Birthday,<br /><span>Shanthi</span></h1>
-          <div class="divider"></div>
+        <div class="card-body">
+          <section class="text-panel">
+            <p class="eyebrow">Birthday celebration</p>
+            <h1>
+              Happy Birthday,<br />
+              <span>Shanthi</span>
+            </h1>
 
-          <p class="message">
-            Wishing you happiness, success and balance in all you do. Happy birthday Shanthi.
-          </p>
+            <div class="divider"></div>
 
-          <div class="tag-row">
-            <span>Happiness</span>
-            <span>Success</span>
-            <span>Peace</span>
-            <span>Joy</span>
-          </div>
+            <p class="message">
+              Wishing you happiness, success and balance in all you do. Happy birthday Shanthi.
+            </p>
 
-          <p class="message extra">
-            May your life be filled with love, laughter, and beautiful memories. May every dream you
-            hold bloom into something joyful, peaceful, and truly magical.
-          </p>
+            <div class="tags" aria-label="Blessings">
+              <span>Happiness</span>
+              <span>Success</span>
+              <span>Peace</span>
+              <span>Joy</span>
+            </div>
 
-          <div class="signature-block">
-            <p class="signature-label">With love,</p>
-            <p class="signature-name">Jebison</p>
-          </div>
-        </section>
+            <p class="message secondary">
+              May your life be filled with love, laughter, and beautiful memories. May every dream
+              you hold bloom into something joyful, peaceful, and truly magical.
+            </p>
+
+            <div class="signature-wrap">
+              <span>With love,</span>
+              <strong>Jebison</strong>
+            </div>
+          </section>
+
+          <aside class="portrait-panel" aria-label="Shanthi portrait area">
+            <div class="portrait-frame">
+              <div class="portrait-ring"></div>
+              <div class="portrait-inner">
+                <span>S</span>
+              </div>
+            </div>
+          </aside>
+        </div>
       </main>
     </div>
 
