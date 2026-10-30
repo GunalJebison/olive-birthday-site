@@ -6,49 +6,84 @@
     <title>Happy Birthday</title>
     <meta
       name="description"
-      content="Beautiful birthday greeting website with olive colors, animations, and photo effects."
+      content="A personal birthday celebration page with olive tones, heartfelt blessings, and photo memories."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <div class="loading-overlay" aria-hidden="true">
+      <div class="loading-text">Happy Birthday</div>
+    </div>
+
     <div class="page-shell">
-      <div class="background-glow glow-one"></div>
-      <div class="background-glow glow-two"></div>
+      <div class="ambient ambient-one"></div>
+      <div class="ambient ambient-two"></div>
       <div class="sparkles" aria-hidden="true"></div>
 
       <main class="card">
         <div class="card-inner">
           <section class="photo-panel">
-            <div class="photo-frame">
-              <div class="photo-badge">Your Photo</div>
+            <div class="photo-badge">Your photo</div>
+            <div class="photo-card photo-main">
+              <div class="photo-glow"></div>
+              <div class="star star-one">✦</div>
+              <div class="star star-two">✦</div>
+              <div class="star star-three">✦</div>
               <div class="photo-placeholder">
-                <span>✨</span>
+                <div class="placeholder-icon">✧</div>
               </div>
             </div>
           </section>
 
-          <section class="text-panel">
-            <p class="eyebrow">Birthday Celebration</p>
-            <h1>Happy Birthday, <span id="nameText">[Name]</span>!</h1>
-            <div class="divider"></div>
-            <p class="message">
+          <section class="content-panel">
+            <p class="eyebrow">Birthday celebration</p>
+            <h1>
+              Happy Birthday,<br />
+              <span>[Name]!</span>
+            </h1>
+
+            <div class="ornament"></div>
+
+            <p class="lead">
               May your day be filled with love, laughter, peace, and countless beautiful memories.
-              May your heart bloom with joy, your life shine with success, and every dream you
-              carry come true in the most magical way.
-            </p>
-            <p class="message message-secondary">
-              Wishing you a year full of warmth, happiness, and beautiful surprises. You deserve
-              all the love and light in the world.
+              May your heart bloom with joy, your life shine with success, and every dream you carry
+              come true in the most magical way.
             </p>
 
-            <div class="wish-signature">With love,</div>
-            <div class="signature-name">[Your Name]</div>
+            <div class="blessing-row" aria-label="Blessings">
+              <span>Love</span>
+              <span>Joy</span>
+              <span>Peace</span>
+              <span>Success</span>
+            </div>
+
+            <p class="blessing-text">
+              Wishing you a year full of warmth, happiness, and beautiful surprises. May your days
+              be blessed with health, calm, grace, and endless reasons to smile.
+            </p>
+
+            <div class="memory-grid">
+              <div class="memory-card memory-card-1">
+                <span class="memory-label">Blessed</span>
+              </div>
+              <div class="memory-card memory-card-2">
+                <span class="memory-label">Mood</span>
+              </div>
+              <div class="memory-card memory-card-3">
+                <span class="memory-label big">Everything is fine but something is missing</span>
+              </div>
+              <div class="memory-card memory-card-4">
+                <span class="memory-label">Love you</span>
+              </div>
+            </div>
+
+            <div class="signature-wrap">
+              <p class="signature-label">with love,</p>
+              <p class="signature-name">[Your Name]</p>
+            </div>
           </section>
         </div>
       </main>
